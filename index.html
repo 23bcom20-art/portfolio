@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio - 23bcom20-art</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div class="ui-container">
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="home" class="section active">
+                <div class="hero">
+                    <h1 class="title">Welcome to My 3D Portfolio</h1>
+                    <p class="subtitle">Explore my work in an immersive 3D experience</p>
+                    <button class="cta-button" onclick="scrollToSection('about')">Explore More</button>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="section-content">
+                    <h2>About Me</h2>
+                    <p>I'm a creative developer passionate about building immersive 3D web experiences. This portfolio showcases my work combining web technologies with stunning 3D visualizations.</p>
+                    <div class="skills">
+                        <div class="skill-item">Three.js</div>
+                        <div class="skill-item">WebGL</div>
+                        <div class="skill-item">Web Development</div>
+                        <div class="skill-item">3D Graphics</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Creative Design</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="section-content">
+                    <h2>Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>3D Scene Visualization</h3>
+                            <p>An interactive 3D environment with multiple objects and lighting effects.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Particle System</h3>
+                            <p>Dynamic particle effects demonstrating advanced 3D programming concepts.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>3D Portfolio Website</h3>
+                            <p>This immersive portfolio built with Three.js and modern web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h2>Get In Touch</h2>
+                    <p>Interested in collaborating or learning more? Reach out!</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/23bcom20-art" class="contact-link">GitHub</a>
+                        <a href="mailto:contact@example.com" class="contact-link">Email</a>
+                        <a href="#" class="contact-link">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
